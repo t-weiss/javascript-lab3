@@ -34,6 +34,6 @@ book.add("bob", "kt@gmail.com", 7345235485, "uncle");
 console.log(book.contacts.length);
 console.log(book.contacts[0].name);
 console.log(book);
-book.deleteAt(5);
+book.deleteAt(4);
 console.log(book);
 print(book);
