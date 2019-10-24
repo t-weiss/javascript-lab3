@@ -24,16 +24,16 @@ function print(addressBook) {
   }
 }
 
-// const book = new AddressBook();
-// book.add("nvl", "lzklv@gmail.com", 755555555, "dad");
-// book.add("kyle", "kt@gmail.com", 7345235485, "brother");
-// book.add("kyle", "kt@gmail.com", 7345235485, "brother");
-// book.add("kyle", "kt@gmail.com", 7345235485, "brother");
-// book.add("kyle", "kt@gmail.com", 7345235485, "brother");
+const book = new AddressBook();
+book.add("kyle", "lzklv@gmail.com", 755555555, "bro");
+book.add("ken", "kG@gmail.com", 7345235485, "dad");
+book.add("julie", "jk@gmail.com", 7345235485, "mom");
+book.add("lou", "ml@gmail.com", 7345235485, "grandma");
+book.add("bob", "kt@gmail.com", 7345235485, "uncle");
 
-// console.log(book.contacts.length);
-// console.log(book.contacts[0].name);
-// console.log(book);
-// book.deleteAt(0);
-// console.log(book);
-// print(book);
+console.log(book.contacts.length);
+console.log(book.contacts[0].name);
+console.log(book);
+book.deleteAt(5);
+console.log(book);
+print(book);
