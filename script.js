@@ -8,6 +8,18 @@ class AddressBook {
   deleteAt(index) {
     this.contacts.splice(index, 1);
   }
+  findByName(name) {
+    return this.contacts.find(function(contactinfo) {
+      return contactinfo.name === name;
+    });
+  }
+  //   edit (oldName, name, email, phone, relation){
+  //     let index = this.contacts.findIndex(Contact =>
+  //       contact.name === oldName
+
+  //     }
+  //     let updated = new Contact(name, email, phone, relation),
+  //     this.contacts[index] = updated
 }
 
 class Contact {
@@ -37,3 +49,5 @@ console.log(book);
 book.deleteAt(4);
 console.log(book);
 print(book);
+book.findByName("lou");
+console.log(book.findByName("kyle"));
